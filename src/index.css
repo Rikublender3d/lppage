@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Zen+Kaku+Gothic+New&display=swap');
+body{
+  font-family: "Noto Serif JP", serif;
+}
+.area {
+  background: linear-gradient(to left, #9b9b9b, #e7e8ff);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card1{
+background-image: url(../src/assets/firstcard.webp);
+}
+.card2{
+background-image: url(../src/assets/secondcard.webp);
+
+}
+.card3{
+background-image: url(../src/assets/thirdcard.webp);
+}
+.card4{
+background-image: url(../src/assets/fouthcard.jpeg);
+}
+.card5{
+background-image: url(../src/assets/fifthcard.webp);
+}
+.card6{
+background-image: url(../src/assets/sixthcard.webp);
+}
+
