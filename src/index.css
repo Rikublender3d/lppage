@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap');
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Zen+Kaku+Gothic+New&display=swap');
+
 body{
-  font-family: "Noto Serif JP", serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .area {
   background: linear-gradient(to left, #9b9b9b, #e7e8ff);
@@ -18,6 +19,7 @@ body{
   height: 100%;
   overflow: hidden;
 }
+
 
 .card1{
 background-image: url(../src/assets/firstcard.webp);
