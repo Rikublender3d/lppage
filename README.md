@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+README – ホワイトニングクリニック LP
+概要
+本リポジトリはホワイトニングサービスに特化したランディングページ（LP）です。
+ユーザーに信頼感を与え、分かりやすく情報を伝えることを目的としています。
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+構成
+1. トップセクション
+ファーストビュー：クリニックのブランドイメージとホワイトニング施術の魅力を視覚的に伝える
+キャッチコピー：ホワイトニングの利点を端的に伝える（例：「輝く白い歯で自信をプラス」）
 
-Currently, two official plugins are available:
+2. 強み
+施術者の専門性：国家資格を持つ歯科医師・歯科衛生士による施術
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+安全性：確かな技術と品質の薬剤を使用
 
-## Expanding the ESLint configuration
+効果の持続性：長期間白さを保つ方法を提案
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. こだわり
+痛みの少ない施術：刺激を抑えたホワイトニング技術
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+カウンセリングの充実：施術前の不安を取り除く丁寧な相談対応
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+快適な施術環境：リラックスできるクリニックの空間
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4. 料金
+プランの明確化：価格設定をシンプルにし、分かりやすい料金表を掲載
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+キャンペーン情報：限定割引や特典を紹介
+
+支払い方法の案内：クレジット決済対応や分割払いの可否
+
+5. よくある質問
+よくある質問を紹介しています。
+
+6. お問い合わせ欄
+
+技術
+
+このLPは以下の技術を使用して開発されています。
+
+Vite：軽量で高速なビルド環境
+
+React：コンポーネント指向のUI設計
+
+Tailwind CSS：効率的なスタイル管理
+
+TypeScript：型安全な開発
+
+設計方針
+SEO最適化：検索エンジンでの上位表示を意識
+
+ユーザー体験重視：直感的なナビゲーションと視認性の高いデザイン
+
+スマホ対応：レスポンシブデザインで快適な閲覧体験
