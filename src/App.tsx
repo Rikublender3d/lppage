@@ -1,10 +1,10 @@
 import image from './assets/top1.jpg';
-import card1 from './assets/firstcard.webp';
+import card1 from './assets/firstcard.jpg';
 import card2 from './assets/secondcard.webp';
-import card3 from './assets/thirdcard.webp';
+import card3 from './assets/thirdcard.jpg';
 import card4 from './assets/fouthcard.jpeg';
 import card5 from './assets/fifthcard.webp';
-import card6 from './assets/sixthcard.webp';
+import card6 from './assets/sixthcard.jpeg';
 import bg from './assets/bg.png';
 import { IoMdCheckboxOutline } from "react-icons/io";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
@@ -12,11 +12,13 @@ import docter from './assets/docter.webp';
 import { RiNumber1 } from "react-icons/ri";
 import { RiNumber2 } from "react-icons/ri";
 import { RiNumber3 } from "react-icons/ri";
-import feature1 from './assets/feature1.webp';
+import feature1 from './assets/feature1.jpg';
 import feature2 from './assets/feature2.webp';
 import feature3 from './assets/feature3.webp';
 import './index.css'
-
+import icon1 from './assets/icon1.png';
+import icon2 from './assets/icon2.png';
+import icon3 from './assets/icon3.png';
 function App() {
 
   return (
@@ -38,7 +40,7 @@ function App() {
             {/* メリットリスト */}
             <ul className="mt-4 text-white space-y-2 text-lg">
               <li>☑︎　症例数 地域 No.1</li>
-              <li>☑︎　土日も予約可能</li>
+              <li>☑︎　平日夜8時まで診療</li>
               <li>☑︎　完全個室・完全予約制</li>
             </ul>
             {/* CTAボタン */}
@@ -89,7 +91,7 @@ function App() {
       </div>
       <div className="flex flex-col gap-10 px-4 py-10 @container mx-auto lg:px-40 md:px-20 px-10 text-center">
         <div className="text-center flex flex-col gap-2">
-          <h2 className="text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">キースおとなこども歯科が選ばれる理由</h2>
+          <h2 className="text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">キースブライトクリニックが選ばれる理由</h2>
           <h3 className="text-[#FFD900] text-2xl font-bold text-center px-4">Reason</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -224,7 +226,7 @@ function App() {
             <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">0円</span>
           </div>
           <a href="https://clinics-app.com/dental/06cb0916-ca56-4284-b963-447a34e5286f" target="_blank">
-          <button className="w-[100%] group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200 transition hover:scale-105 hover:bg-neutral-900 active:scale-95 duration-200"><span>申し込む</span><div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"><div className="relative h-full w-15 bg-white/10"></div></div></button>
+            <button className="w-[100%] group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200 transition hover:scale-105 hover:bg-neutral-900 active:scale-95 duration-200"><span>申し込む</span><div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"><div className="relative h-full w-15 bg-white/10"></div></div></button>
           </a>
           <div className="flex flex-col gap-2">
             <p>
@@ -234,11 +236,11 @@ function App() {
         </div>
         <div className="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#dce0e5] bg-white p-6">
           <div className="flex flex-col gap-1">
-            <h1 className="text-[#111418] text-base font-bold leading-tight">オフィスホワイトニング（50分）</h1>
-            <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">6,600円</span>
+            <h1 className="text-[#111418] text-base font-bold leading-tight">オフィスホワイトニング</h1>
+            <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">13,200円</span>
           </div>
           <a href="https://clinics-app.com/dental/06cb0916-ca56-4284-b963-447a34e5286f">
-          <button className="w-[100%] group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200 transition hover:scale-105 hover:bg-neutral-900 active:scale-95 duration-200"><span>申し込む</span><div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"><div className="relative h-full w-15 bg-white/10"></div></div></button>
+            <button className="w-[100%] group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200 transition hover:scale-105 hover:bg-neutral-900 active:scale-95 duration-200"><span>申し込む</span><div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"><div className="relative h-full w-15 bg-white/10"></div></div></button>
           </a>
           <div className="flex flex-col gap-2">
             <p>
@@ -249,11 +251,11 @@ function App() {
         </div>
         <div className="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#dce0e5] bg-white p-6">
           <div className="flex flex-col gap-1">
-            <h1 className="text-[#111418] text-base font-bold leading-tight">ホームホワイトニング</h1>
-            <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">19,800円</span>
+            <h1 className="text-[#111418] text-base font-bold leading-tight">ホームホワイトニング初回</h1>
+            <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">20,000円</span>
           </div>
           <a href="https://clinics-app.com/dental/06cb0916-ca56-4284-b963-447a34e5286f">
-          <button className="w-[100%] group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200 transition hover:scale-105 hover:bg-neutral-900 active:scale-95 duration-200"><span>申し込む</span><div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"><div className="relative h-full w-15 bg-white/10"></div></div></button>
+            <button className="w-[100%] group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200 transition hover:scale-105 hover:bg-neutral-900 active:scale-95 duration-200"><span>申し込む</span><div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"><div className="relative h-full w-15 bg-white/10"></div></div></button>
           </a>
           <p>
             マウスピースを使用し、自宅など好きな場所で行うホワイトニングです。オフィスホワイトニングよりも低濃度のジェルを使用し、毎日３０分〜２時間程度マウスピースにいれて装着します。
@@ -268,7 +270,9 @@ function App() {
           <div className="flex items-center gap-3">
             <div
               className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-            ></div>
+            >
+              <img src={icon1} />
+            </div>
             <div className="flex-1">
               <p className="text-[#111418] text-base font-medium leading-normal">Y.U　さん</p>
               <p className="text-[#637588] text-sm font-normal leading-normal">20代　女性</p>
@@ -319,7 +323,9 @@ function App() {
           <div className="flex items-center gap-3">
             <div
               className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-            ></div>
+            >
+              <img src={icon2} />
+            </div>
             <div className="flex-1">
               <p className="text-[#111418] text-base font-medium leading-normal">T.I さん</p>
               <p className="text-[#637588] text-sm font-normal leading-normal">30代　男性</p>
@@ -370,7 +376,9 @@ function App() {
           <div className="flex items-center gap-3">
             <div
               className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-            ></div>
+            >
+              <img src={icon3} className="w-full h-full object-cover" />
+            </div>
             <div className="flex-1">
               <p className="text-[#111418] text-base font-medium leading-normal">E.K さん</p>
               <p className="text-[#637588] text-sm font-normal leading-normal">40代 女性</p>
@@ -545,11 +553,13 @@ function App() {
         </div>
       </div>
       <div className="z-100 flex fixed bottom-0 px-4 py-3 justify-end">
-        <button
-          className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-4 bg-[#FFD900] z-100 text-white text-sm font-bold leading-normal tracking-[0.015em]"
-        >
-          <span className="truncate">申し込みはこちら</span>
-        </button>
+        <a href="https://clinics-app.com/dental/06cb0916-ca56-4284-b963-447a34e5286f" target="_blank" rel="noopener noreferrer" className="truncate">
+          <button
+            className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-4 bg-[#FFD900] z-100 text-white text-sm font-bold leading-normal tracking-[0.015em]"
+          >
+            申し込みはこちら
+          </button>
+        </a>
       </div>
     </>
   )
