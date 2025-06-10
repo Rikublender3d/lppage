@@ -19,6 +19,7 @@ import './index.css';
 import icon1 from './assets/icon1.png';
 import icon2 from './assets/icon2.png';
 import icon3 from './assets/icon3.png';
+import Banner from './components/banner';
 function App() {
   interface Testimonial {
     id: number;
@@ -119,6 +120,7 @@ function App() {
       </header>
       <body>
         <main>
+          <Banner />
           <article className="relative" aria-labelledby="problems-section">
             <section className="w-[100%] md:h-[80vh] h-[60vh] md:absolute bg-gradient-to-l from-[#8f94fb] to-[#4e54c8] z-10">
               <img
@@ -135,26 +137,26 @@ function App() {
             </section>
             <section className="md:hidden text-left flex flex-col justify-evenly items-left w-[95%] mx-auto">
               <div className="flex gap-2 items-center py-5" data-aos="fade-right" data-aos-duration="800">
-                <IoMdCheckboxOutline className='w-10 h-10' aria-hidden="true" />
+                <IoMdCheckboxOutline className='w-10 h-10' />
                 <h2 className="md:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
                   ホワイトニングって<br />どれを選ベばいいのかわからない
                 </h2>
               </div>
               <div className="flex gap-2 items-center py-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-                <IoMdCheckboxOutline className='w-10 h-10' aria-hidden="true" />
+                <IoMdCheckboxOutline className='w-10 h-10' />
                 <h2 className="md:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
                   最近歯が黄ばんできた…
                 </h2>
               </div>
               <div className="flex gap-2 items-center py-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
-                <IoMdCheckboxOutline className='w-10 h-10' aria-hidden="true" />
+                <IoMdCheckboxOutline className='w-10 h-10' />
                 <h2 className="md:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
                   マスクを外すと<br />急に口元が目立つようになった
                 </h2>
               </div>
             </section>
           </article>
-
+          <p className="text-3xl font-bold text-center px-4 py-10 @container mx-auto lg:px-40 md:px-20 px-10">そんなお悩みは...</p>
           <MdOutlineKeyboardDoubleArrowDown className='w-20 h-20 mx-auto my-5 animate-bounce' aria-hidden="true" />
 
           <section className='md:flex justify-center items-center' aria-labelledby="doctor-section">
@@ -165,12 +167,12 @@ function App() {
               loading="lazy"
             />
             <h2 id="doctor-section" className="object-center text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">
-              国家資格を持つ歯科医師・歯科衛生士にお任せください。
+              <span className="text-[#FFD900] text-5xl font-black line-clamp-2">キースブライト<br className='md:hidden' />クリニック</span><br />にお任せください。
             </h2>
           </section>
           <section className="flex flex-col gap-10 px-4 py-10 @container mx-auto lg:px-40 md:px-20 px-10 text-center" aria-labelledby="reasons-section">
             <div className="text-center flex flex-col gap-2">
-              <h2 id="reasons-section" className="text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">キースブライトクリニックが選ばれる理由</h2>
+              <h2 id="reasons-section" className="text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">選ばれる理由</h2>
               <h3 className="text-[#FFD900] text-2xl font-bold text-center px-4">Reason</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -202,7 +204,7 @@ function App() {
           </section>
           <section aria-labelledby="commitment-section">
             <h2 id="commitment-section" className="text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">
-              キースおとなこども歯科のこだわり
+              こだわり
             </h2>
             <h3 className="text-[#FFD900] text-2xl font-bold text-center px-4">Commitment</h3>
             <div className="relative overflow-hidden pt-16 pb-32 space-y-24">
@@ -302,6 +304,7 @@ function App() {
               </article>
             </div>
           </section>
+          <Banner />
           <section area-labelledby="pricing-section">
             <h2 id="pricing-section" className="text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">料金一覧</h2>
             <h3 className="text-[#FFD900] text-2xl font-bold text-center px-4">Price</h3>
@@ -492,7 +495,6 @@ function App() {
                 <div className="py-8 first:pt-0 last:pb-0">
                   <div className="flex gap-x-5">
                     <svg className="shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg>
-
                     <div className="grow">
                       <h3 className="md:text-lg font-semibold text-gray-800 ">
                         ホワイトニングをしたあと、どれくらいで飲食できますか？
@@ -517,7 +519,7 @@ function App() {
             </div>
           </section>
         </main>
-      </body>
+      </body >
     </>
   )
 }
