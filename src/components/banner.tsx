@@ -1,16 +1,16 @@
 function Banner() {
   return (
-    <div className="relative z-10 py-6 mx-auto px-4  bg-yellow-100">
+    <div className="relative z-10 py-12 mx-auto px-2  bg-[#bcd3ed]">
       {/* Main message */}
-      <div className="text-center my-10 ">
-        <h2 className="text-gray-700 line-leading-[1.5] text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+      <div className="relative max-w-4xl mx-auto text-center">
+        <h2 className="text-gray-800 text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-[1.5]">
           まずはお気軽にお問い合わせください！<br />
           24時間365日受付中
         </h2>
       </div>
       {/* CTA Button */}
-      <div className="flex justify-center mb-8">
-        <button className="group relative px-12 py-4 bg-gradient-to-r from-yellow-400 to-yellow-300 text-gray-700 font-bold text-xl rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-yellow-500 hover:from-yellow-300 hover:to-yellow-200">
+      <div className="flex justify-center">
+        <button className="group relative px-12 py-4 bg-gradient-to-r from-[#7facdc] to-[#a4cadb] text-gray-700 font-bold text-xl rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
           <span className="flex items-center gap-3">
             お問い合わせ・ご予約はこちら
             <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
@@ -25,3 +25,4 @@ function Banner() {
   )
 }
 export default Banner;
+

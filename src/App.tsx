@@ -110,7 +110,7 @@ function App() {
                 target='_blank'
                 rel="noopener noreferrer"
                 href="https://clinics-app.com/dental/06cb0916-ca56-4284-b963-447a34e5286f"
-                className="mt-6 inline-block px-8 py-4 text-lg font-semibold text-white bg-[#FFD900] rounded-xl shadow-lg hover:bg-[#CFCCAA] transition"
+                className="mt-6 inline-block px-8 py-4 text-lg font-semibold text-white bg-[#7facdc] rounded-xl shadow-lg hover:bg-[#CFCCAA] transition"
                 aria-label="キースブライトクリニックの無料カウンセリングを今すぐ予約">
                 今すぐ予約
               </a>
@@ -136,20 +136,20 @@ function App() {
               <h2 className='md:absolute left-1/12 bottom-1/12 bg-gray-700 bg-clip-text text-4xl font-bold  text-transparent z-20' data-aos="fade-up" data-aos-duration="1000">マスクを外すと急に口元が目立つようになった</h2>
             </section>
             <section className="md:hidden text-left flex flex-col justify-evenly items-left w-[95%] mx-auto">
-              <div className="flex gap-2 items-center py-5" data-aos="fade-right" data-aos-duration="800">
-                <IoMdCheckboxOutline className='w-10 h-10' />
+              <div className="flex gap-2 items-center py-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="0">
+                <IoMdCheckboxOutline className='w-10 h-10' aria-hidden="true" />
                 <h2 className="md:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
                   ホワイトニングって<br />どれを選ベばいいのかわからない
                 </h2>
               </div>
-              <div className="flex gap-2 items-center py-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-                <IoMdCheckboxOutline className='w-10 h-10' />
+              <div className="flex gap-2 items-center py-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                <IoMdCheckboxOutline className='w-10 h-10' aria-hidden="true" />
                 <h2 className="md:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
                   最近歯が黄ばんできた…
                 </h2>
               </div>
-              <div className="flex gap-2 items-center py-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
-                <IoMdCheckboxOutline className='w-10 h-10' />
+              <div className="flex gap-2 items-center py-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+                <IoMdCheckboxOutline className='w-10 h-10 ' aria-hidden="true" />
                 <h2 className="md:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
                   マスクを外すと<br />急に口元が目立つようになった
                 </h2>
@@ -511,7 +511,7 @@ function App() {
             <div className="z-100 flex fixed bottom-0 px-4 py-3 justify-end">
               <a href="https://clinics-app.com/dental/06cb0916-ca56-4284-b963-447a34e5286f" target="_blank" rel="noopener noreferrer" className="truncate">
                 <button
-                  className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-4 bg-[#FFD900] z-100 text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                  className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-4 bg-[#7facdc] z-100 text-white text-sm font-bold leading-normal tracking-[0.015em]"
                 >
                   申し込みはこちら
                 </button>
