@@ -20,6 +20,7 @@ import icon1 from './assets/icon1.png';
 import icon2 from './assets/icon2.png';
 import icon3 from './assets/icon3.png';
 import Banner from './components/banner';
+import Banner_white from './components/banner_white';
 function App() {
   interface Testimonial {
     id: number;
@@ -120,9 +121,9 @@ function App() {
       </header>
       <body>
         <main>
-          <Banner />
+          <Banner_white />
           <article className="relative" aria-labelledby="problems-section">
-            <section className="w-[100%] md:h-[80vh] h-[60vh] md:absolute bg-gradient-to-l from-[#8f94fb] to-[#4e54c8] z-10">
+            <section className="w-[100%] lg:h-[80vh] h-[60vh] lg:absolute bg-gradient-to-l from-[#8f94fb] to-[#4e54c8] z-10">
               <img
                 src={bg}
                 alt="背景パターン"
@@ -130,27 +131,27 @@ function App() {
                 loading="lazy"
               />
             </section>
-            <section className="hidden md:block md:h-[80vh] h-[60vh] flex justify-center items-center">
+            <section className="hidden lg:block lg:h-[80vh] h-[60vh] flex justify-center items-center">
               <h2 className='md:absolute left-1/24 top-1/12 bg-gray-700 bg-clip-text text-4xl font-bold text-transparent z-20' data-aos="fade-up" data-aos-duration="1000">ホワイトニングってどれを選ベばいいのかわからない</h2>
               <h2 className='md:absolute right-1/50 top-2/5 bg-gray-700 bg-clip-text text-4xl font-bold  text-transparent z-20 ' data-aos="fade-up" data-aos-duration="1000">最近歯が黄ばんできた…</h2>
               <h2 className='md:absolute left-1/12 bottom-1/12 bg-gray-700 bg-clip-text text-4xl font-bold  text-transparent z-20' data-aos="fade-up" data-aos-duration="1000">マスクを外すと急に口元が目立つようになった</h2>
             </section>
-            <section className="md:hidden text-left flex flex-col justify-evenly items-left w-[95%] mx-auto">
-              <div className="flex gap-2 items-center py-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="0">
-                <IoMdCheckboxOutline className='w-10 h-10' aria-hidden="true" />
-                <h2 className="md:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
+            <section className="lg:hidden text-left flex flex-col justify-evenly items-left w-[95%] mx-auto">
+              <div className="flex gap-2 items-center py-2" data-aos="fade-right" data-aos-duration="800">
+                <IoMdCheckboxOutline className='w-10 h-10  z-20' aria-hidden="true" />
+                <h2 className="lg:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
                   ホワイトニングって<br />どれを選ベばいいのかわからない
                 </h2>
               </div>
               <div className="flex gap-2 items-center py-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-                <IoMdCheckboxOutline className='w-10 h-10' aria-hidden="true" />
-                <h2 className="md:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
+                <IoMdCheckboxOutline className='w-10 h-10   z-20' aria-hidden="true" />
+                <h2 className="lg:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
                   最近歯が黄ばんできた…
                 </h2>
               </div>
               <div className="flex gap-2 items-center py-2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
-                <IoMdCheckboxOutline className='w-10 h-10 ' aria-hidden="true" />
-                <h2 className="md:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
+                <IoMdCheckboxOutline className='w-10 h-10   z-20' aria-hidden="true" />
+                <h2 className="lg:hidden bg-gray-700 bg-clip-text text-[1.5rem] font-medium text-transparent z-20">
                   マスクを外すと<br />急に口元が目立つようになった
                 </h2>
               </div>
@@ -159,7 +160,7 @@ function App() {
           <p className="text-3xl font-bold text-center px-4 py-10 @container mx-auto lg:px-40 md:px-20 px-10">そんなお悩みは...</p>
           <MdOutlineKeyboardDoubleArrowDown className='w-20 h-20 mx-auto my-5 animate-bounce' aria-hidden="true" />
 
-          <section className='md:flex justify-center items-center' aria-labelledby="doctor-section">
+          <section className='lg:flex justify-center items-center' aria-labelledby="doctor-section">
             <img
               src={docter}
               alt="キースブライトクリニックの歯科医師"
@@ -305,6 +306,199 @@ function App() {
             </div>
           </section>
           <Banner />
+          <div className=" text-center py-16 px-8 relative overflow-hidden">
+            <div className="relative z-10">
+              <h2 id="reasons-section" className="text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">ホワイトニング比較表</h2>
+              <p className="text-xl md:text-2xl opacity-100">医療 vs サロン・歯磨き粉</p>
+            </div>
+          </div>
+          <div className="p-8 md:p-12 hidden md:block">
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse rounded-2xl overflow-hidden ">
+                <thead>
+                  <tr>
+                    <th className="bg-gray-800 text-white p-6 text-left text-xl font-bold w-1/4">比較項目</th>
+                    <th className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 text-center text-xl font-bold w-3/8 pulse-glow">
+                      <div className="flex flex-col items-center">
+                        <span>医療ホワイトニング</span>
+                        <span className="text-sm bg-blue-500 px-3 py-1 rounded-full mt-2">おすすめ</span>
+                      </div>
+                    </th>
+                    <th className="bg-gray-500 text-white p-6 text-center text-xl font-bold w-3/8 opacity-80">
+                      <div className="flex flex-col items-center">
+                        <span>サロン・歯磨き粉</span>
+                        <span className="text-sm bg-gray-400 px-3 py-1 rounded-full mt-2">限定的</span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr className="border-b-2 border-gray-100">
+                    <td className="bg-gray-50 p-6 border-r-2 border-gray-200">
+                      <div className="flex items-center">
+                        <span className="bg-gray-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">1</span>
+                        <span className="text-lg font-bold text-gray-800">薬剤の種類</span>
+                      </div>
+                    </td>
+                    <td className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 border-r-2 border-blue-200">
+                      <div className="text-center">
+                        <p className="text-lg font-bold text-blue-800 mb-2">薬剤の使用ができる</p>
+                        <p className="text-sm text-blue-600">高濃度の過酸化水素を使用可能</p>
+                      </div>
+                    </td>
+                    <td className="bg-gray-100 p-6 opacity-80">
+                      <div className="text-center">
+                        <p className="text-lg font-semibold text-gray-700 mb-2">歯磨き粉と同等レベル</p>
+                        <p className="text-sm text-gray-500">低濃度の薬剤のみ使用可能</p>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr className="border-b-2 border-gray-100 bg-yellow-50">
+                    <td className="bg-yellow-100 p-6 border-r-2 border-yellow-200">
+                      <div className="flex items-center">
+                        <span className="bg-[#FFD900] text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">2</span>
+                        <span className="text-lg font-bold text-yellow-800">効果</span>
+                      </div>
+                    </td>
+                    <td className="bg-gradient-to-r from-blue-600 to-blue-700 p-6 border-r-2 border-blue-300 text-white">
+                      <div className="text-center">
+                        <p className="text-xl font-bold mb-2">✨ 歯を内側から白くする ✨</p>
+                        <p className="text-sm text-blue-100">根本的な漂白効果で本来の白さ以上に</p>
+                        <div className="mt-3 bg-white/20 rounded-lg p-2">
+                          <p className="text-sm font-semibold">真の美白効果</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="bg-gray-300 p-6 opacity-70">
+                      <div className="text-center">
+                        <p className="text-lg font-semibold text-gray-700 mb-2">表面の着色汚れを除去</p>
+                        <p className="text-sm text-gray-600">表面的なクリーニング効果のみ</p>
+                        <div className="mt-3 bg-gray-400 rounded-lg p-2">
+                          <p className="text-sm text-white">限定的な効果</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="bg-gray-50 p-6 border-r-2 border-gray-200">
+                      <div className="flex items-center">
+                        <span className="bg-gray-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">3</span>
+                        <span className="text-lg font-bold text-gray-800">施術者</span>
+                      </div>
+                    </td>
+                    <td className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 border-r-2 border-blue-200">
+                      <div className="text-center">
+                        <p className="text-lg font-bold text-blue-800 mb-2">歯科医師・歯科衛生士</p>
+                        <p className="text-sm text-blue-600">有資格者のみが施術</p>
+                        <div className="mt-2 inline-block bg-blue-500 text-white px-3 py-1 rounded-full text-xs">
+                          安心・安全
+                        </div>
+                      </div>
+                    </td>
+                    <td className="bg-gray-100 p-6 opacity-80">
+                      <div className="text-center">
+                        <p className="text-lg font-semibold text-gray-700 mb-2">有資格者以外も施術可能</p>
+                        <p className="text-sm text-gray-500">専門知識が限定的</p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="md:hidden space-y-8 px-4 pt-8">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="bg-gray-800 text-white p-4 text-center">
+                <div className="flex items-center justify-center">
+                  <span className="bg-gray-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">1</span>
+                  <span className="text-lg font-bold">薬剤の種類</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200">
+                  <div className="text-center mb-4">
+                    <h3 className="font-bold text-blue-800 text-lg">医療ホワイトニング</h3>
+                    <span className="text-xs bg-blue-500 text-white px-2 py-1 rounded-full">おすすめ</span>
+                  </div>
+                  <p className="text-blue-800 font-bold mb-2">薬剤の使用ができる</p>
+                  <p className="text-sm text-blue-600">高濃度の過酸化水素を使用可能</p>
+                </div>
+                <div className="bg-gray-100 rounded-xl p-6 border-2 border-gray-300 opacity-80">
+                  <div className="text-center mb-4">
+                    <h3 className="font-bold text-gray-700 text-lg">サロン・歯磨き粉</h3>
+                    <span className="text-xs bg-gray-400 text-white px-2 py-1 rounded-full">限定的</span>
+                  </div>
+                  <p className="text-gray-700 font-semibold mb-2">歯磨き粉と同等レベル</p>
+                  <p className="text-sm text-gray-500">低濃度の薬剤のみ使用可能</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden bg-yellow-50">
+              <div className="bg-[#FFD900] text-white p-4 text-center">
+                <div className="flex items-center justify-center">
+                  <span className="bg-yellow-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">2</span>
+                  <span className="text-lg font-bold">効果</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-6 text-white">
+                  <div className="text-center mb-4">
+                    <h3 className="font-bold text-lg">医療ホワイトニング</h3>
+                    <span className="text-xs bg-blue-500 px-2 py-1 rounded-full">おすすめ</span>
+                  </div>
+                  <p className="font-bold text-lg mb-2">✨ 歯を内側から白くする ✨</p>
+                  <p className="text-sm text-blue-100 mb-3">根本的な漂白効果で本来の白さ以上に</p>
+                  <div className="bg-white/20 rounded-lg p-2">
+                    <p className="text-sm font-semibold">真の美白効果</p>
+                  </div>
+                </div>
+                <div className="bg-gray-300 rounded-xl p-6 opacity-70">
+                  <div className="text-center mb-4">
+                    <h3 className="font-bold text-gray-700 text-lg">サロン・歯磨き粉</h3>
+                    <span className="text-xs bg-gray-400 text-white px-2 py-1 rounded-full">限定的</span>
+                  </div>
+                  <p className="text-gray-700 font-semibold mb-2">表面の着色汚れを除去</p>
+                  <p className="text-sm text-gray-600 mb-3">表面的なクリーニング効果のみ</p>
+                  <div className="bg-gray-400 rounded-lg p-2">
+                    <p className="text-sm text-white">限定的な効果</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="bg-gray-800 text-white p-4 text-center">
+                <div className="flex items-center justify-center">
+                  <span className="bg-gray-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">3</span>
+                  <span className="text-lg font-bold">施術者</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200">
+                  <div className="text-center mb-4">
+                    <h3 className="font-bold text-blue-800 text-lg">医療ホワイトニング</h3>
+                    <span className="text-xs bg-blue-500 text-white px-2 py-1 rounded-full">おすすめ</span>
+                  </div>
+                  <p className="text-blue-800 font-bold mb-2">歯科医師・歯科衛生士</p>
+                  <p className="text-sm text-blue-600 mb-2">有資格者のみが施術</p>
+                  <div className="inline-block bg-blue-500 text-white px-3 py-1 rounded-full text-xs">
+                    安心・安全
+                  </div>
+                </div>
+                <div className="bg-gray-100 rounded-xl p-6 border-2 border-gray-300 opacity-80">
+                  <div className="text-center mb-4">
+                    <h3 className="font-bold text-gray-700 text-lg">サロン・歯磨き粉</h3>
+                    <span className="text-xs bg-gray-400 text-white px-2 py-1 rounded-full">限定的</span>
+                  </div>
+                  <p className="text-gray-700 font-semibold mb-2">有資格者以外も施術可能</p>
+                  <p className="text-sm text-gray-500">専門知識が限定的</p>
+                </div>
+              </div>
+            </div>
+            <Banner_white />
+          </div>
           <section area-labelledby="pricing-section">
             <h2 id="pricing-section" className="text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">料金一覧</h2>
             <h3 className="text-[#FFD900] text-2xl font-bold text-center px-4">Price</h3>
