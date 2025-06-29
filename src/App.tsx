@@ -12,9 +12,11 @@ import docter from './assets/docter.webp';
 import { RiNumber1 } from "react-icons/ri";
 import { RiNumber2 } from "react-icons/ri";
 import { RiNumber3 } from "react-icons/ri";
+import { RiNumber4 } from "react-icons/ri";
 import feature1 from './assets/feature1.jpg';
 import feature2 from './assets/feature2.webp';
 import feature3 from './assets/feature3.webp';
+import feature4 from './assets/feature4.jpg';
 import './index.css';
 import icon1 from './assets/icon1.png';
 import icon2 from './assets/icon2.png';
@@ -111,7 +113,7 @@ function App() {
                 target='_blank'
                 rel="noopener noreferrer"
                 href="https://clinics-app.com/dental/06cb0916-ca56-4284-b963-447a34e5286f"
-                className="mt-6 inline-block px-8 py-4 text-lg font-semibold text-white bg-[#7facdc] rounded-xl shadow-lg hover:bg-[#CFCCAA] transition"
+                className="mt-6 inline-block px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-xl shadow-lg hover:bg-[#7facdc] transition ease-in-out duration-300"
                 aria-label="キースブライトクリニックの無料カウンセリングを今すぐ予約">
                 今すぐ予約
               </a>
@@ -246,8 +248,8 @@ function App() {
                     <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                       <img
                         loading="lazy"
-                        src={feature2}
-                        alt="24時間ネット予約システム"
+                        src={feature4}
+                        alt="独自ホワイトニングジェル"
                         className="aspect-video object-cover w-full rounded-xl shadow-2xl ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                       />
                     </div>
@@ -261,11 +263,10 @@ function App() {
                       </div>
                       <div className="mt-6">
                         <h3 className="text-3xl font-bold tracking-tight">
-                          24時間予約受付
-                          問診対応
+                          当院独自開発のホワイトニングジェルを使用
                         </h3>
                         <p className="mt-4 text-lg text-gray-700 min-h-[150px]">
-                          当院では、歯の黄ばみが気になった時すぐにご予約ができるように24時間ネット予約を承っております。
+                          当院独自開発のポリリン酸ホワイトニングは、痛みを大幅に軽減し色戻りしにくいように独自の配合を行っております。自然な透明感とツヤで仕上がり、コーティング効果により虫歯・口臭予防も期待できます。
                         </p>
                       </div>
                     </div>
@@ -297,6 +298,38 @@ function App() {
                         </h3>
                         <p className="mt-4 text-lg text-gray-700 min-h-[150px]">
                           ホワイトニングの種類も豊富で、患者様のご希望に寄り添い目的・時間に合わせてプランをご提供致します。歯科医師・歯科衛生士が密にコミュニケーションを取り、ホワイトニングのみならず治療も可能なためお口の中をトータルケアできることも選んでいただいているポイントになっております。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article className="relative">
+                <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+                  <div className="mt-12 sm:mt-16 lg:mt-0">
+                    <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                      <img
+                        loading="lazy"
+                        src={feature4}
+                        alt="24時間ネット予約システム"
+                        className="aspect-video object-cover w-full rounded-xl shadow-2xl ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                      />
+                    </div>
+                  </div>
+                  <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
+                    <div>
+                      <div>
+                        <span className="flex h-12 w-12 text-white items-center justify-center rounded-xl bg-[#595757]">
+                          <RiNumber4 aria-hidden="true" />
+                        </span>
+                      </div>
+                      <div className="mt-6">
+                        <h3 className="text-3xl font-bold tracking-tight">
+                          24時間予約受付
+                          問診対応
+                        </h3>
+                        <p className="mt-4 text-lg text-gray-700 min-h-[150px]">
+                          当院では、歯の黄ばみが気になった時すぐにご予約ができるように24時間ネット予約を承っております。
                         </p>
                       </div>
                     </div>
@@ -507,7 +540,7 @@ function App() {
                 <div className="flex flex-col gap-1">
                   <div className="flex items-center justify-between">
                     <h1 className="text-[#111418] text-base font-bold leading-tight">無料カウンセリング30分</h1>
-                    <p className="text-white text-xs font-medium leading-normal tracking-[0.015em] rounded-xl bg-[#FFD900] px-3 py-[3px] text-center">一番人気</p>
+                    <p className="text-white text-xs font-medium leading-normal tracking-[0.015em] rounded-xl bg-blue-700 px-3 py-[3px] text-center">一番人気</p>
                   </div>
                   <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">0円</span>
                 </div>
