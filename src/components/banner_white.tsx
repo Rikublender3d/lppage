@@ -9,7 +9,7 @@ function Banner_white() {
       {/* CTA Button */}
       <div className="flex justify-center">
         <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-12 rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 pulse-glow">
-          24時間365日予約可能　まずはお気軽に
+          24時間365日予約可能<br className="block md:hidden" />まずはお気軽に
         </button>
       </div>
     </div>

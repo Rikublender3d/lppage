@@ -310,7 +310,7 @@ function App() {
                     <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                       <img
                         loading="lazy"
-                        src={feature4}
+                        src={feature2}
                         alt="24時間ネット予約システム"
                         className="aspect-video object-cover w-full rounded-xl shadow-2xl ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                       />
