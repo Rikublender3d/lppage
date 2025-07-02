@@ -170,7 +170,7 @@ function App() {
               loading="lazy"
             />
             <h2 id="doctor-section" className="object-center text-[#595757] text-4xl font-bold text-center px-4 pb-3 pt-5">
-              <span className="text-[#FFD900] text-5xl font-black line-clamp-2">キースブライト<br className='md:hidden' />クリニック</span><br />にお任せください。
+              <span className="text-[#FFD900] text-5xl font-black line-clamp-2">キースブライト<br className="md:hidden" />クリニック</span><br />にお任せください。
             </h2>
           </section>
           <section className="flex flex-col gap-10 px-4 py-10 @container mx-auto lg:px-40 md:px-20 px-10 text-center" aria-labelledby="reasons-section">
@@ -263,10 +263,10 @@ function App() {
                       </div>
                       <div className="mt-6">
                         <h3 className="text-3xl font-bold tracking-tight">
-                          当院独自開発のホワイトニングジェルを使用
+                          独自開発した医療用ジェル
                         </h3>
                         <p className="mt-4 text-lg text-gray-700 min-h-[150px]">
-                          当院独自開発のポリリン酸ホワイトニングは、痛みを大幅に軽減し色戻りしにくいように独自の配合を行っております。自然な透明感とツヤで仕上がり、コーティング効果により虫歯・口臭予防も期待できます。
+                          歯を強くしながら白くなるホワイトニングジェルを開発しホワイトニングに使用しています。
                         </p>
                       </div>
                     </div>
