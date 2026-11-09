@@ -556,7 +556,7 @@ function App() {
               <div className="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#dce0e5] bg-white p-6">
                 <div className="flex flex-col gap-1">
                   <h1 className="text-[#111418] text-base font-bold leading-tight">オフィスホワイトニング</h1>
-                  <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">13,200円</span>
+                  <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">15,000円</span>
                 </div>
                 <a href="https://clinics-app.com/dental/06cb0916-ca56-4284-b963-447a34e5286f">
                   <button className="w-[100%] group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200 transition hover:scale-105 hover:bg-neutral-900 active:scale-95 duration-200"><span>申し込む</span><div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"><div className="relative h-full w-15 bg-white/10"></div></div></button>
@@ -571,7 +571,7 @@ function App() {
               <div className="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#dce0e5] bg-white p-6">
                 <div className="flex flex-col gap-1">
                   <h1 className="text-[#111418] text-base font-bold leading-tight">ホームホワイトニング初回</h1>
-                  <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">20,000円</span>
+                  <span className="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em]">24,200円</span>
                 </div>
                 <a href="https://clinics-app.com/dental/06cb0916-ca56-4284-b963-447a34e5286f">
                   <button className="w-[100%] group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200 transition hover:scale-105 hover:bg-neutral-900 active:scale-95 duration-200"><span>申し込む</span><div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"><div className="relative h-full w-15 bg-white/10"></div></div></button>
